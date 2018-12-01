@@ -13,7 +13,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.example.demo.dao.EmployeeRepository;
 import com.example.demo.dto.Employee;
 import com.example.demo.service.EmployeeService;
 /*To test the Controllers, we can use @WebMvcTest. 
