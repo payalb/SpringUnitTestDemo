@@ -20,7 +20,7 @@ import com.example.demo.service.EmployeeService;
 //Without using spring runner
 @RunWith(MockitoJUnitRunner.class)
 public class EmployeeControllerTest2 {
-
+  //  @Autowired WebApplicationContext wac; 
 	@Mock
 	EmployeeService service;
 	MockMvc mvc;
@@ -31,6 +31,7 @@ public class EmployeeControllerTest2 {
 	public void setup() {
 		//does not use spring application context
 		mvc = MockMvcBuilders.standaloneSetup(controller).build();
+	//	MockMvcBuilders.webAppContextSetup(wac).build();
 	}
 
 	@Test
